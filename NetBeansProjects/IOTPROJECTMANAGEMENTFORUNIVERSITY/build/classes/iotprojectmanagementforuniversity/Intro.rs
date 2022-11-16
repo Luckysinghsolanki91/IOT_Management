@@ -1,1 +1,0 @@
-iotproject.smangementforuniversity.Intro
