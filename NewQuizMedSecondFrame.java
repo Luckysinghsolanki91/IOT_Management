@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class NewQuizSecondFrame extends JFrame implements ActionListener{
+public class NewQuizMedSecondFrame extends JFrame implements ActionListener{
 
     /**
 	 * 
@@ -23,7 +23,7 @@ public class NewQuizSecondFrame extends JFrame implements ActionListener{
 	String name;
      JTextField tfname;
   JButton next,Previous;
-    NewQuizSecondFrame(String name){
+    NewQuizMedSecondFrame(String name){
         setSize(800,650);
         setLocation(350,100);
         setVisible(true);
@@ -73,7 +73,7 @@ public class NewQuizSecondFrame extends JFrame implements ActionListener{
     }
 
     public static void main(String args[]){
-     new NewQuizSecondFrame("User");
+     new NewQuizMedSecondFrame("User");
 }    
 
     @Override
@@ -135,7 +135,7 @@ public class NewQuizSecondFrame extends JFrame implements ActionListener{
              //new Openquizpage();
              URI uri = null;
 			try {
-				uri = new URI("file:///C:/Users/Hp/Desktop/Vscode2file/vscodefileH/Quiz.html");
+				uri = new URI("file:///C:/Users/Hp/Desktop/Vscode2file/vscodefileH/Quiz2.html");
 			} catch (URISyntaxException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

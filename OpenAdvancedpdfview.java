@@ -7,7 +7,7 @@ import java.io.File;
 
 import javax.swing.JOptionPane;
 
-public class Openpdfview extends javax.swing.JFrame implements ActionListener {
+public class OpenAdvancedpdfview extends javax.swing.JFrame implements ActionListener {
 
     /**
 	 * 
@@ -17,7 +17,7 @@ public class Openpdfview extends javax.swing.JFrame implements ActionListener {
 	/**
      * Creates new form 
      */
-    public Openpdfview() {
+    public OpenAdvancedpdfview() {
         initComponents();
     }
 
@@ -66,7 +66,7 @@ public class Openpdfview extends javax.swing.JFrame implements ActionListener {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         try{
-            File file=new File("D:\\PDF FILE.pdf.pdf");
+            File file=new File("D:\\ADvanced Level.pdf");
           if(file.exists()){
               if(Desktop.isDesktopSupported()){
                   Desktop.getDesktop().open(file);
@@ -98,13 +98,13 @@ public class Openpdfview extends javax.swing.JFrame implements ActionListener {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Openpdfview.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(OpenAdvancedpdfview.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Openpdfview.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(OpenAdvancedpdfview.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Openpdfview.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(OpenAdvancedpdfview.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Openpdfview.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(OpenAdvancedpdfview.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -112,7 +112,7 @@ public class Openpdfview extends javax.swing.JFrame implements ActionListener {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new Openpdfview().setVisible(true);
+                new OpenAdvancedpdfview().setVisible(true);
             }
         });
     }
@@ -125,4 +125,5 @@ public class Openpdfview extends javax.swing.JFrame implements ActionListener {
        // throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
+
 

@@ -1,16 +1,16 @@
-package iotprojectmanagementforuniversity;
+package com.iotprojectmanagmentforuniversity;
 
 import java.awt.Color;
 import java.awt.Desktop;
 //import java.awt.Desktop;
-import java.awt.Image;
+//import java.awt.Image;
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+//import java.util.logging.Level;
+//import java.util.logging.Logger;
 //import java.net.URI;
 //import java.net.URI;
 //import java.awt.Desktop;
@@ -20,18 +20,24 @@ import java.util.logging.Logger;
 //Choice content;
 public class Project extends JFrame implements ActionListener {
 
-    //now we create a constructor of class
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	//now we create a constructor of class
     Project(){
         setSize(1366,768);
         setVisible(true);
         //now we set a background image 
-        ImageIcon i1;
+        /*ImageIcon i1;
         i1 = new ImageIcon(ClassLoader.getSystemResource("icons/front.jpg"));
        Image i2 = i1.getImage().getScaledInstance(1366,768,Image.SCALE_DEFAULT);
        ImageIcon i3 = new  ImageIcon(i2); 
        JLabel image = new JLabel(i3);
-        add(image);
-        //now we create a menubar of Jclass
+        add(image);*/
+        setContentPane(new JLabel(new ImageIcon("C:\\Users\\Hp\\Pictures\\iot-background.jpg")));
+        //now we create a menu-bar of J-class
         JMenuBar mb=new JMenuBar();
         setJMenuBar(mb);
         
@@ -65,14 +71,14 @@ public class Project extends JFrame implements ActionListener {
         
         
         
-         JMenu Servies = new JMenu("SERVIES");
+      /*   JMenu Servies = new JMenu("SERVIES");
         Servies.setForeground(Color.BLACK);
         mb.add(Servies);
         JMenuItem Onlineshop =new JMenuItem("IOT electronics shop");
-        Shop.add(Onlineshop);
+        //Shop.add(Online-shop);
        Onlineshop .setBackground(Color.GRAY);
         Onlineshop.addActionListener(this);
-         mb.add(Servies);
+         mb.add(Servies);*/
       
  /*<==================================================================================================>*/
  /*<==================================================================================================>*/
@@ -88,8 +94,8 @@ public class Project extends JFrame implements ActionListener {
       S1.addActionListener(this);
       
       
-      /*JMenuItem basiclevel =new JMenuItem("basic-level");
-         ProjectMaterial.add(basiclevel);
+      /*JMenuItem basic-level =new JMenuItem("basic-level");
+         ProjectMaterial.add(basic-level);
          basiclevel.addActionListener(this);
        ProjectMaterial.setBackground(Color.blue);*/
       
@@ -133,15 +139,15 @@ public class Project extends JFrame implements ActionListener {
       Studyvideo.setBackground(Color.RED);
       Websitelinks.addActionListener(this);
        
-       /* JMenuItem Websitestudy=new JMenuItem("Website-study");
-      Studyvideo.add(Websitestudy); 
+       /* JMenuItem Web-site-study=new JMenuItem("Web-site-study");
+      Studyvideo.add(Web-site-study); 
       Websitestudy.setBackground(Color.RED);
       Websitestudy.addActionListener(this);*/
         
       
-      /* JMenu Studylink = new JMenu("STUDY-LINK");
+      /* JMenu Study-link = new JMenu("STUDY-LINK");
         Studylink.setForeground(Color.BLACK);
-        Studyvideo .add( Studyvideo);
+        Study-video .add( Study-video);
  
         JMenuItem Websitestudyleft=new JMenuItem("Website-Links");
       Studyvideo.add(Websitestudy); 
@@ -287,7 +293,17 @@ public class Project extends JFrame implements ActionListener {
        JMenuItem Quizbasiclevel =new JMenuItem("Beginnerlevel");
         QuizLogin.add(Quizbasiclevel);
         QuizLogin.setBackground(Color.blue);
-        Quizbasiclevel.addActionListener(this);  
+        Quizbasiclevel.addActionListener(this);
+        
+        JMenuItem QuizIntermidatelevel =new JMenuItem("Intermmidate-level");
+        QuizLogin.add(QuizIntermidatelevel);
+        QuizLogin .setBackground(Color.RED);
+        QuizIntermidatelevel.addActionListener(this);
+        
+        JMenuItem QuizAdvancedlevel =new JMenuItem("Advanced-level");
+        QuizLogin.add(QuizAdvancedlevel);
+        QuizLogin.setBackground(Color.GREEN);
+        QuizAdvancedlevel.addActionListener(this);
       
       
         /*<=============================================================================================>*/
@@ -318,17 +334,6 @@ public class Project extends JFrame implements ActionListener {
          //Tools.add(calc); 
        //calc.setBackground(Color.WHITE);
         
-        
-        
-         JMenuItem QuizIntermidatelevel =new JMenuItem("Intermmidate-level");
-        QuizLogin.add(QuizIntermidatelevel);
-        QuizLogin .setBackground(Color.RED);
-        QuizLogin.addActionListener(this);
-        
-         JMenuItem QuizAdvancedlevel =new JMenuItem("Advanced-level");
-        QuizLogin.add(QuizAdvancedlevel);
-        QuizLogin.setBackground(Color.GREEN);
-        QuizLogin.addActionListener(this);
      
      /*<=============================================================================================>*/
          
@@ -418,10 +423,12 @@ public class Project extends JFrame implements ActionListener {
        
        JMenuItem meduimlevel =new JMenuItem("meduim-level");
          ProjectMaterial.add(meduimlevel);
+         meduimlevel.addActionListener(this);
        ProjectMaterial.setBackground(Color.PINK);
        
-       JMenuItem Advancedlevel =new JMenuItem("Advanced-level");
+       JMenuItem Advancedlevel =new JMenuItem("ADvanced-level");
          ProjectMaterial.add(Advancedlevel);
+         Advancedlevel.addActionListener(this);
        ProjectMaterial.setBackground(Color.red);
        /*<=================================================================================================>*/
        /*<=================================================================================================>*/ 
@@ -432,8 +439,8 @@ public class Project extends JFrame implements ActionListener {
         Projectupload.setBackground(Color.BLUE);
         
           JMenuItem IOTPROJECTs=new JMenuItem("IOT PROJECTS");
-      Servies.add(IOTPROJECTs); 
-      Onlineshop.addActionListener(this);
+      //Servies.add(IOTPROJECTs); 
+      //Onlineshop.addActionListener(this);
        IOTPROJECTs.setBackground(Color.ORANGE);
         
         
@@ -459,13 +466,13 @@ public class Project extends JFrame implements ActionListener {
          
         
         
-           JMenu Help = new JMenu("HELP");
+          /* JMenu Help = new JMenu("HELP");
       Help.setForeground(Color.BLUE);
         mb.add(Help);
          JMenuItem Instruction =new JMenuItem("Instruction");
          Help.add(Instruction);         
           mb.add(Help);
-       Instruction.setBackground(Color.yellow);
+       Instruction.setBackground(Color.yellow);*/
         
         
        
@@ -482,7 +489,7 @@ public class Project extends JFrame implements ActionListener {
        
     }
     @Override
-    @SuppressWarnings({"ConvertToStringSwitch", "ResultOfObjectAllocationIgnored", "CallToPrintStackTrace"})
+    @SuppressWarnings({})
      public void actionPerformed(ActionEvent ae){
           setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);setLocationRelativeTo(null);
      String msg = ae.getActionCommand();
@@ -492,6 +499,24 @@ public class Project extends JFrame implements ActionListener {
            // new NewQuizSecondFrame("User");
            new NewQuizlogin();
      }
+     
+     if(msg.equals("Intermmidate-level")){
+         // Runtime.getRuntime().exec("calc.exe");
+       //new Quizloginpage1().setVisible(true);
+      // new NewQuizSecondFrame("User");
+     // new NewQuizlogin();
+    	 new NewQuizMedlogin();
+    	 //new OpenquizMeduimpage();
+}
+
+     if(msg.equals("Advanced-level")){
+      new NewQuizlogin();
+}
+
+     
+     
+     
+     
      
      if(msg.equals("Add-New-Teacher")){
               // Runtime.getRuntime().exec("calc.exe");
@@ -503,15 +528,22 @@ public class Project extends JFrame implements ActionListener {
      if(msg.equals("Add-New-Student")){
               // Runtime.getRuntime().exec("calc.exe");
            // new Quizloginpage1().setVisible(true);
-            new AddStudent().setVisible(true);
+           new AddStudent().setVisible(true);
      }
      
      if(msg.equals("basic-level")){
-            new Openpdfview().setVisible(true);
+           new Openpdfview().setVisible(true);
      }
+     if(msg.equals("meduim-level")){
+    	 new OpenMediumpdfview().setVisible(true);
+   }
+     if(msg.equals("ADvanced-level")){
+    	  new OpenAdvancedpdfview().setVisible(true);
+   }
+     
      
       if(msg.equals("Student-Attendence")){
-            new Quizloginpage1().setVisible(true);
+           new Attendenceloginpage().setVisible(true);
      }
      
      
@@ -527,9 +559,9 @@ public class Project extends JFrame implements ActionListener {
             link1.browse(new URI("https://1000projects.org"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+          //  Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
       
@@ -539,9 +571,9 @@ public class Project extends JFrame implements ActionListener {
             link2.browse(new URI("https://www.naukri.com/learning/articles/best-online-resources-to-learn-iot-internet-of-things/"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
       
@@ -551,9 +583,9 @@ public class Project extends JFrame implements ActionListener {
             link3.browse(new URI("https://www.simplilearn.com/internet-of-things-iot-projects-article"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
       
@@ -563,9 +595,9 @@ public class Project extends JFrame implements ActionListener {
             link4.browse(new URI("https://theiotprojects.com/top-10-iot-internet-of-things-projects/"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
       
@@ -576,9 +608,9 @@ public class Project extends JFrame implements ActionListener {
             link5.browse(new URI("https://nevonprojects.com/iot-projects/"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
       
@@ -588,9 +620,9 @@ public class Project extends JFrame implements ActionListener {
             link6.browse(new URI("https://www.pantechsolutions.net/iot-projects-for-engineering-students"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
       
@@ -600,9 +632,9 @@ public class Project extends JFrame implements ActionListener {
             link7.browse(new URI("https://www.upgrad.com/blog/iot-project-ideas-topics-for-beginners/"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
       
@@ -611,83 +643,83 @@ public class Project extends JFrame implements ActionListener {
        if(msg.equals("CHANNEL-1")){
      Desktop channel1=Desktop.getDesktop();
         try {
-            channel1.browse(new URI("https://1000projects.org"));
+            channel1.browse(new URI("https://www.youtube.com/watch?v=WUYAjxnwjU4&list=PLE7VH8RC_N3bpVn-e8QzOAHziEgmjQ2qE"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
        
          if(msg.equals("CHANNEL-2")){
      Desktop channel2=Desktop.getDesktop();
         try {
-            channel2.browse(new URI("https://1000projects.org"));
+            channel2.browse(new URI("https://www.youtube.com/watch?v=APH6Nrar27w&list=PLYwpaL_SFmcB8fDd64B8SkJiPpEIzpCzC"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
          
       if(msg.equals("CHANNEL-3")){
      Desktop channel3=Desktop.getDesktop();
         try {
-            channel3.browse(new URI("https://1000projects.org"));
+            channel3.browse(new URI("https://www.youtube.com/watch?v=h0gWfVCSGQQ"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+         //   Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
         if(msg.equals("CHANNEL-4")){
      Desktop channel4=Desktop.getDesktop();
         try {
-            channel4.browse(new URI("https://1000projects.org"));
+            channel4.browse(new URI("https://www.youtube.com/watch?v=LUWIFzOhkso&list=PLBV6VAQlom0n7iq_d1-uzIt3rBMyXj-kB"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
        
           if(msg.equals("CHANNEL-5")){
      Desktop channel5=Desktop.getDesktop();
         try {
-            channel5.browse(new URI("https://1000projects.org"));
+            channel5.browse(new URI("https://www.youtube.com/watch?v=Ic63-yf-zuc&list=PL3uLubnzL2Tm5PAw88N1jR9MLTJpuPEnX"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
       
             if(msg.equals("CHANNEL-6")){
      Desktop channel6=Desktop.getDesktop();
         try {
-            channel6.browse(new URI("https://1000projects.org"));
+            channel6.browse(new URI("https://www.youtube.com/watch?v=unlPb-dfW7s&list=PLz8TdOA7NTzR1NxoC8yRIWfaO0Yrj9gVB"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
       
         if(msg.equals("CHANNEL-7")){
      Desktop channel7=Desktop.getDesktop();
         try {
-            channel7.browse(new URI("https://1000projects.org"));
+            channel7.browse(new URI("https://www.youtube.com/watch?v=SMmj_qAbyeM&list=PLe_7x5eaUqtXw_mLA0FyPQh2LCuVNuO2H"));
            // new  Googlepage();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
+           // Logger.getLogger(ElectronIcEquiSignuppage.class.getName()).log(Level.SEVERE, null, ex);
         }
       } 
       
@@ -697,31 +729,38 @@ public class Project extends JFrame implements ActionListener {
       
       
       
-      
-      /*if(msg.equals("")){
-            new ElectronIcEquiloginpage().setVisible(true);
-     }*?
+   
      
      
-    //if(msg.equals("Exit")){
-        //setVisible(false);
-      //  System.exit(0);
-    //}
-     else if(msg.equals("EXIT")){
-         setVisible(false);
+    if(msg.equals("EXIT")){
+        setVisible(false);
+     // System.exit(0);
+    }
+    
+  /*  if(msg.equals("ProjectCreatedBy")){
+    	 new ProjectCreatedBy().setVisible(true);
+     // System.exit(0);
+    }*/
+    
+    
+    // else if(msg.equals("EXIT")){
+      //   setVisible(false);
            
           //System.exit(0);
          // Runtime.getRuntime().exec("explorer.exe");
-     }
+     //}
      
-    if(msg.equals("CHANNEL1")){
+    //if(msg.equals("CHANNEL1")){
          //setVisible(false);
-          new Channel1(); 
+      //    new Channel1(); 
           //System.exit(0);
          // Runtime.getRuntime().exec("explorer.exe");
-     }
+    // }
      
-     
+    if(msg.equals("Project Created By")){
+    //new ElectronIcEquiloginpage().setVisible(true);
+    	new ProjectCreatedBy().setVisible(true);
+}
      
    
    else if(msg.equals("FileSystem")){
@@ -731,13 +770,6 @@ public class Project extends JFrame implements ActionListener {
                     
                 }  
      }
-   
-   
-   
-   
-   
-   
-   
     else if(msg.equals("Calculator")){
          try{
                    Runtime.getRuntime().exec("calc.exe");
@@ -810,8 +842,7 @@ public class Project extends JFrame implements ActionListener {
      }
      }
      
-    @SuppressWarnings("ResultOfObjectAllocationIgnored")  
-      public static void main(String args[])throws Exception{
+    public static void main(String args[])throws Exception{
       
           /*Desktop d=Desktop.getDesktop();
     d.browse(new URI("http://www.Electronicscomp.com"));
@@ -874,3 +905,4 @@ public class Project extends JFrame implements ActionListener {
     
 //}
    
+

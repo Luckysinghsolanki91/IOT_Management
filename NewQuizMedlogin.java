@@ -1,3 +1,9 @@
+/*package com.iotprojectmanagmentforuniversity;
+
+public class NewQuizMedlogin {
+
+}
+*/
 package com.iotprojectmanagmentforuniversity;
 
 import java.awt.Color;
@@ -11,14 +17,14 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class NewQuizlogin extends JFrame implements ActionListener{
+public class NewQuizMedlogin extends JFrame implements ActionListener{
     /**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	JButton rules,cancel;
     JTextField tfname;
-    NewQuizlogin(){
+    NewQuizMedlogin(){
         // setSize(1366,768);
         setVisible(true);
    // setVisible(true);
@@ -99,7 +105,7 @@ public class NewQuizlogin extends JFrame implements ActionListener{
        
 }
     public static void main(String args[]){
-       new NewQuizlogin();
+       new NewQuizMedlogin();
     }
 
     @Override
@@ -107,7 +113,9 @@ public class NewQuizlogin extends JFrame implements ActionListener{
         if(e.getSource()==rules){
             setVisible(false);
          // new NewQuizSecondFrame(name);
-            new NewQuizSecondFrame("User");
+           // new NewQuizSecondFrame("User");
+            new NewQuizMedSecondFrame("User");
+           // new OpenquizMeduimpage();
         }else if(e.getSource()==cancel){
             setVisible(false);
             
